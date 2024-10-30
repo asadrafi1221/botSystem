@@ -3,7 +3,7 @@
 @tailwind utilities;
 body{
     color:white;
-    background-color: black;
+   
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -14,4 +14,15 @@ body {
     font-family: "Poppins", sans-serif;
    font-weight: 600;
     font-style: normal;
+  }
+  .Loader{
+    animation : loader infinite 1s ease-in;
+  }
+  @keyframes loader {
+    0%{
+        transform: translateX(-30%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
   }
