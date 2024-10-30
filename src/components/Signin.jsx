@@ -17,8 +17,8 @@ Navigate('/Recover')
     }
     const Navigate = useNavigate()
   return (
-        <div className=" flex items-center justify-center flex-col min-h-screen text-black ">
-            <div className='w-full Loader hidden absolute top-0 left-0 z-[100] '><p className='w-[20%] max-h-[2vh] bg-blue-500 mt-3   rounded-3xl flex items-center justify-center'>.</p></div>
+        <div className=" flex items-center justify-center flex-col min-h-screen text-black max-w-[100vw]">
+            <div className='w-full Loader hidden absolute top-0 left-0 z-[100] max-w-[100vw]'><p className='w-[20%] max-h-[2vh] bg-blue-500 mt-3   rounded-3xl flex items-center justify-center'>.</p></div>
                     <div className='h-screen absolute top-0 left-0 z-50 Mask bg-black hidden  w-full opacity-25 '>
                     </div>
       <div className="h-[500px] w-[95vw] sm:w-[90%] md:w-[500px] xl:h-[90%] max-w-[500px] border-2 border-brown rounded-xl p-6 md:p-8">
