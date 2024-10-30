@@ -1,25 +1,19 @@
 import React from "react";
-import { GoogleLogin, googleLogout } from '@react-oauth/google';
-
-const clientId = "1030908024396-h03lv154t229qqpnj733j1n353sj1m16.apps.googleusercontent.com";
+import { GoogleLogin } from "@react-oauth/google";
 
 const Login = () => {
   const onSuccess = (response) => {
-    console.log("Login Success:", response);
+    console.log("Login successful!", response);
+    // Handle login success here, e.g., store tokens
   };
 
-  const onFailure = (error) => {
-    console.log("Login Failed:", error);
+  const onError = () => {
+    console.log("Login failed.");
   };
 
   return (
     <div>
-      <GoogleLogin
-        clientId={clientId}
-        onSuccess={onSuccess}
-        onFailure={onFailure}
-    
-      />
+      <GoogleLogin onSuccess={onSuccess} onError={onError} />
     </div>
   );
 };
