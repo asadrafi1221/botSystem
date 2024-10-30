@@ -1,4 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body{
     color:white;
     background-color: black;
 }
+body {
+    font-family: "Poppins", sans-serif;
+   
+    font-style: normal;
+  }
+  .boldtext{
+    font-family: "Poppins", sans-serif;
+   font-weight: 600;
+    font-style: normal;
+  }
