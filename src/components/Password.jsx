@@ -21,6 +21,7 @@ export default function Password() {
         });
     
         const data = await res.json();
+        console.log(data)
     
         if (!data) { // Changed to an if statement for clarity
             console.log('Sorry, data not found');
@@ -44,7 +45,7 @@ export default function Password() {
         <div className='flex flex-col items-center justify-center pt-6 md:pt-10 gap-2'>
           <img src="google.png" className='w-16 md:w-[20%] xl:w-[25%]' alt="Google Logo"/>
           <p className='boldtext text-xl md:text-2xl'>Hi {`Asad`}</p>
-          <p className='text-gray-600 text-sm md:text-base border-2 border-brown px-3 py-1 rounded-3xl'>{localStorage.getItem(email)}</p>
+          <p className='text-gray-600 text-sm md:text-base border-2 border-brown px-3 py-1 rounded-3xl'>{localStorage.getItem('email')}</p>
         </div>
         <div className='h-[60%] flex flex-col justify-around mt-6 md:mt-10'>
           <div className="flex flex-col">
