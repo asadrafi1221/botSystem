@@ -1,19 +1,28 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 export default function Signin() {
 
+  const [email,setEmail] = useState(null)
+
     const HandleLogin = ()=>{
+      if(!email){
+  alert('plz enter your email')
+  return
+      }
 document.querySelector('.Loader').style.display = "flex"
 document.querySelector('.Mask').style.display = "flex"
+
 
 setTimeout(()=>{
 document.querySelector('.Loader').style.display = "hidden"
 document.querySelector('.Mask').style.display = "hidden"
-Navigate('/Recover')
+Navigate('/Password')
 },2000)
+console.log(email)
 
-
+localStorage.setItem('email',email)
     }
     const Navigate = useNavigate()
   return (
@@ -30,7 +39,7 @@ Navigate('/Recover')
         <div className='h-[60%] flex flex-col justify-around mt-6 md:mt-10'>
           <div className="flex flex-col">
             <form>
-              <input type="text" className='p-4 w-full border-2 rounded-md outline-blue-500' placeholder='Email or phone' />
+              <input type="text" className='p-4 w-full border-2 rounded-md outline-blue-500' placeholder='Email or phone' onChange={(e)=>setEmail(e.target.value)} />
             </form>
             <div className='w-full'>
               <button className='text-blue-500 boldtext text-sm md:text-md mt-2'>Forgot email?</button>
