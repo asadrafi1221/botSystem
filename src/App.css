@@ -1,0 +1,30 @@
+.StaticR {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.StaticB {
+  font-family: "Bebas Neue", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open";
+  src: url("School.woff2") format("woff2");
+}
+@font-face {
+    font-family: "wide";
+    src: url("Wide.woff") format("woff");
+  }
+  
+
+.Open {
+  font-family: Open;
+}
+.wide {
+    font-family: wide;
+  }
+  
+
+
