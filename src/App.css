@@ -11,12 +11,15 @@
 
 @font-face {
   font-family: "Open";
-  src: url("School.woff2") format("woff2");
+  src: url("/School.woff2") format("woff2"),
+      
 }
 @font-face {
-    font-family: "wide";
-    src: url("Wide.woff") format("woff");
-  }
+  font-family: "wide";
+  src: url("/Wide.woff2") format("woff2"),
+      
+}
+
   
 
 .Open {

@@ -4,7 +4,7 @@ import Quote from "./Quote";
 function HeroPage() {
   return (
     <>
-      <div className="p-5   relative md:p-10 xl:p-14 min-h-screen flex max-w-[100vw] overflow-hidden items-center justify-center wide text-[11vw] md:text-[8.5vw]          flex-col  ">
+      <div className="p-5  relative md:p-10 xl:p-14 min-h-screen flex max-w-[100vw] overflow-hidden items-center justify-center StaticB  text-[11vw] md:text-[8.5vw]  flex-col  ">
         <div className="lg:mt-16 w-full">
         <div className="flex items-start  w-full leading-none ">
           <h1 className="">CREATIVE</h1>
